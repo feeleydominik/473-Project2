@@ -1,2 +1,3 @@
 # 473-Project2
-473 Front End Web Design class.
+Name: Dominik Feeley
+Collaborators: Jon Sumarto, Zach McEachern

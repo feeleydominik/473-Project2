@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Grades</title>
+    <script src='javascripts/globalVars.js'></script>
+    <script src='javascripts/model/Person.js'></script>
+    <script src='javascripts/view/ListView.js'></script>
+    <script src='javascripts/view/TableView.js'></script>
+    <script src='javascripts/control/PersonPageControl.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script id="p-list-template" type="text/x-handlebars-template">
+    	{{#each people}}
+    	<li>{{first_name}} {{last_name}}</li>
+    	{{/each}}
+    </script>
+    <script id="s-grade-template" type="text/x-handlebars-template">
+    	{{#each grade}}
+    	<tr>
+        <td>{{class_name}}</td> <td>{{letter_grade}}</td>
+      </tr>
+    	{{/each}}
+    </script>
+  </head>
+  <body>
+
+    <b>Last Name:</b>
+    <input id="ln_id" type="text" name="last_name" data-attr="last_name">
+    <input id="search_person_id" type="submit" name="search" value="Search">
+    <br>
+
+    <b>Students Found:</b><br>
+    <ul id='person_list_id'>
+  	</ul>
+
+    <b>Grades for "Student":</b><br>
+    <table id="grade_table_id" border="1px">
+      <tr>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+    </table>
+  </body>
+</html>
