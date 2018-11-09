@@ -41,6 +41,7 @@ var createPerson = (function() {
 				// send that list of grades to the TableView.
 				var table_view = new test.view.TableView(grades_of_found_student);
 		};
+	}
 	// make sure the page is fully loaded before registering event handler
 	window.addEventListener('load', function(event) {
 		PersonPageControl();
@@ -79,5 +80,4 @@ var createPerson = (function() {
 	}
 
 	return createPerson;
-
 })();
